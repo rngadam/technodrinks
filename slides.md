@@ -79,9 +79,19 @@ Here is another comment.
 -->
 ---
 ---
+# Justificatifs numériques (aka Identifiants vérifiables)
+
+Triangle de confiance entre émetteur, détenteur et vérificateur
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/VC_triangle_of_Trust.svg/1024px-VC_triangle_of_Trust.svg.png" style="background-color:white;padding:20px;">
+
+---
+---
 # Preuve à divulgation nulle de connaissance
 
-> Une preuve à divulgation nulle de connaissance (Zero Knowledge Interactive proof ou ZKIP en anglais) est un protocole cryptographique permettant l'authentification sécurisée d'informations. Dans le cadre de ce protocole, une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition.
+<AutoFitText :max="60" :min="30">
+Une preuve à divulgation nulle de connaissance (Zero Knowledge Interactive proof ou ZKIP en anglais) est un protocole cryptographique permettant l'authentification sécurisée d'informations. Dans le cadre de ce protocole, une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition.
+</AutoFitText>
 ---
 ---
 
@@ -156,19 +166,47 @@ sequenceDiagram
 
 ---
 ---
-# acapy (aka hyperledger/aries-cloudagent-python)
+# ACA-py (aka acapy aka hyperledger/aries-cloudagent-python)
 
-migré de hyperledger/aries-cloudagent-python à openwallet-foundation/acapy
+ACA-Py est une base pour la création d'écosystèmes de justificatifs vérifiables (VC). Il fonctionne dans les deuxième et troisième couches du cadre Trust Over IP (PDF) en utilisant une variété de formats et de protocoles de justificatifs vérifiables. ACA-Py s'exécute sur des serveurs (cloud, entreprise, appareils IoT, etc.) et n'est pas conçu pour fonctionner sur des appareils mobiles.
+
+migré il y a quelques jours de hyperledger/aries-cloudagent-python à openwallet-foundation/acapy
 
 <img src="https://openwallet.foundation/wp-content/uploads/sites/11/2023/10/OpenWallet_Foundation_Logo_White.svg">
 
 ---
 ---
-# déploiement
+# Architecture de ACA-py
 
-<Transform :scale="0.8">
-<img src="https://github.com/openwallet-foundation/acapy/blob/main/docs/assets/deploymentModel-full.png?raw=true" height="100%">
+<div class="flex w-full">
+  <span style="flex-grow: 1;">
+    <img src="https://github.com/openwallet-foundation/acapy/blob/main/aca-py_architecture.png?raw=true">
+  </span>
+  <span>
+    <img src="https://github.com/openwallet-foundation/acapy/blob/main/docs/assets/deploymentModel-full.png?raw=true">
+  </span>
+</div>
+
+---
+---
+# Credo (openwallet-foundation/credo-ts)
+
+Credo est un cadriciel écrit en TypeScript pour la création de solutions d'identité décentralisées.
+
+Credo est indépendant de tout protocole d'échange spécifique, format d'informations d'identification, suite de signatures ou méthode DID, mais se concentre actuellement principalement sur l'alignement avec OpenID4VC, DIDComm et Hyperledger Aries.
+
+<Transform  :scale="0.5">
+<img src="https://raw.githubusercontent.com/openwallet-foundation/credo-ts/c7886cb8377ceb8ee4efe8d264211e561a75072d/images/credo-logo.png">
 </Transform>
+
+---
+---
+# Bifold Wallet (openwallet-foundation/bifold-wallet/)
+
+* Bifold Wallet est un projet open source conçu pour améliorer la façon dont nous interagissons avec les identités numériques, en rendant le processus à la fois sécurisé et convivial.
+* Il est basé sur React Native, ce qui lui permet de fonctionner sans problème sur différents appareils et plateformes, tels qu'iOS et Android.
+* Il s'agit d'un exemple majeur de portefeuille numérique, qui vise à rendre les informations d'identification vérifiables (VC) simples et pratiques pour tous.
+
 ---
 ---
 # Pour en apprendre plus
