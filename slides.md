@@ -276,6 +276,12 @@ Credo est indépendant de tout protocole d'échange spécifique, format d'inform
 
 ---
 ---
+# Conclusion et période de questions
+
+Justificatifs et attestations numériques de sources fiables avec le partage d'information géré par le détenteur (le citoyen)!
+
+---
+---
 # Pour en apprendre plus
 
 * https://www.quebec.ca/gouvernement/identite-numerique/programme-service-quebecois-identite-numerique
