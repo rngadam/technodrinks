@@ -22,6 +22,23 @@ overviewSnapshots: true
 ---
 # Introduction à l'identité numérique décentralisée
 ---
+---
+# Ricky Ng-Adam (ricky@coderbunker.ca)
+
+https://www.linkedin.com/in/rngadam/
+
+<Transform :scale="0.4">
+<img src="./PXL_20240809_231130566.jpg">
+</Transform>
+
+---
+class: center
+---
+<Transform :scale="0.6">
+<img src="./collage.jpg">
+</Transform>
+---
+---
 
 # Agenda
 
@@ -198,6 +215,13 @@ sequenceDiagram
 
 ---
 ---
+# AnonCreds Specification (hyperledger/anoncreds-rs)
+La spécification AnonCreds (Anonymous Credentials) est basée sur l'implémentation open source des informations d'identification vérifiables d'AnonCreds qui est utilisée depuis 2017, initialement dans le cadre du projet open source Hyperledger Indy et désormais dans le projet Hyperledger AnonCreds. L'utilisation intensive d'AnonCreds dans le monde entier en a fait une norme de facto pour les informations d'identification vérifiables basées sur ZKP, et cette spécification est la formalisation de cette implémentation.
+
+<img src="https://raw.githubusercontent.com/hyperledger/anoncreds-spec/main/spec/images/logo/hl_anoncreds_colour.svg">
+
+---
+---
 # Verifiable Data Registry (VDR)
 
 Hyperledger Indy: une chaîne de blocs avec permissions
@@ -205,6 +229,7 @@ Hyperledger Indy: une chaîne de blocs avec permissions
 <Transform  :scale="0.9">
 <img src="https://decentralized-id.com/images/private-public-permissioned-permissionless.webp" />
 </Transform>
+
 
 ---
 ---
