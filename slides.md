@@ -25,13 +25,16 @@ overviewSnapshots: true
 
 # Agenda
 
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+* Qu'est-ce que l'identité numérique décentralisée?
+* Qu'est-ce qu'un justificatif numérique?
+* Comment fonctionne la preuve à divulgation nulle de connaissance?
+* Quelles sont les composantes d'un système d'identité numérique décentralisée?
 
 ---
 
 # Introduction à l'identité numérique décentralisée
 
-L’identité numérique décentralisée (DID; Decentralized Identifiers) est une approche innovante qui permet aux individus de contrôler directement leur propre identité numérique. Contrairement aux systèmes centralisés traditionnels, où les informations d’identité sont gérées par des entités tierces, l’identité décentralisée repose sur des technologies comme la blockchain pour offrir une gestion plus sécurisée et privée des données personnelles.
+L’identité numérique décentralisée est une approche innovante qui permet aux individus de contrôler directement leur propre identité numérique. Contrairement aux systèmes centralisés traditionnels, où les informations d’identité sont gérées par des entités tierces, l’identité décentralisée repose sur des technologies comme la blockchain pour offrir une gestion plus sécurisée et privée des données personnelles.
 
 Dans cette présentation de 20 minutes, les concepts de base de l'identité décentralisée seront introduits ainsi que leurs applications autour de l'agent Python Aries de Hyperledger (transféré à l'OpenWallet Foundation)
 
@@ -92,10 +95,39 @@ Triangle de confiance entre émetteur, détenteur et vérificateur
 <AutoFitText :max="60" :min="30">
 Une preuve à divulgation nulle de connaissance (Zero Knowledge Interactive proof ou ZKIP en anglais) est un protocole cryptographique permettant l'authentification sécurisée d'informations. Dans le cadre de ce protocole, une entité, nommée « fournisseur de preuve », prouve mathématiquement à une autre entité, le « vérificateur », qu'une proposition est vraie sans révéler d'autres informations que la véracité de la proposition.
 </AutoFitText>
+
+---
+---
+# Sésame
+
+Jean-Jacques Quisquater: "How to Explain Zero-Knowledge Protocols to Your Children"
+
+Peggy choisi A ou B au hasard
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Zkip_alibaba1.png/300px-Zkip_alibaba1.png">
+
+---
+---
+# Mise au défi par Victor
+
+Victor test A ou B au hasard
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Zkip_alibaba2.png/300px-Zkip_alibaba2.png">
+
+---
+---
+# Preuve de Peggy
+
+Peggy sort correctement de A ou B
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Zkip_alibaba3.png/300px-Zkip_alibaba3.png">
+
 ---
 ---
 
 # Lois des exposants
+
+Quelques lois mathématiques simples
 
 ​​Produit de puissances de même base: $x^{a}*x^{b}=x^{a+b}$
 
@@ -163,6 +195,16 @@ sequenceDiagram
   Alice->John: fv = f(r+(x*e))
   John->John: is fv == fx*fr**e%p?
 ```
+
+---
+---
+# Verifiable Data Registry (VDR)
+
+Hyperledger Indy: une chaîne de blocs avec permissions
+
+<Transform  :scale="0.9">
+<img src="https://decentralized-id.com/images/private-public-permissioned-permissionless.webp" />
+</Transform>
 
 ---
 ---
