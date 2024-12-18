@@ -107,6 +107,19 @@ Triangle de confiance entre émetteur, détenteur et vérificateur
 
 ---
 ---
+
+# Composantes d'un système d'identités décentralisées
+
+* Identifiants décentralisés (W3C DID)
+* Verifiable Data Registry (Hyperledger Indy)
+* Attestations vérifiables (cryptographie anoncreds-rs)
+* Protocoles de communication (DIDcomm)
+* Agents (acapy)
+* Contrôleurs (logique d'affaires - intégration avec les organisations émettrices)
+* Portefeuilles numérique (interface utilisateur, génération et stockage)
+
+---
+---
 # Preuve à divulgation nulle de connaissance
 
 <AutoFitText :max="60" :min="30">
@@ -284,14 +297,35 @@ Justificatifs et attestations numériques de sources fiables avec le partage d'i
 ---
 # Pour en apprendre plus
 
-* https://www.quebec.ca/gouvernement/identite-numerique/programme-service-quebecois-identite-numerique
+* https://www.w3.org/TR/did-core/
+* https://dev.uniresolver.io/
+* https://github.com/decentralized-identity/universal-resolver
 * https://github.com/rngadam/zkp-exemple
+* https://github.com/hyperledger/anoncreds-rs
 * https://github.com/hyperledger/indy-node
 * https://github.com/bcgov/von-network
-* https://github.com/hyperledger/anoncreds-rs
 * https://aca-py.org/latest/
 * https://github.com/openwallet-foundation/acapy
 * https://github.com/openwallet-foundation/credo-ts
 * https://github.com/openwallet-foundation/bifold-wallet/
+* https://github.com/openwallet-foundation/acapy-vc-authn-oidc
+
+---
+---
+# gouvernements
+
+* https://www.quebec.ca/gouvernement/identite-numerique/programme-service-quebecois-identite-numerique
+* https://www.ontario.ca/fr/page/identite-numerique-ontarienne
+* https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/innovations-gouvernementales-numeriques/justificatifs-numeriques.html
+* https://digital.gov.bc.ca/digital-trust/home/
+* https://digital.gov.bc.ca/digital-trust/showcase/
+
+---
+---
+# formation
+
+* https://training.linuxfoundation.org/training/introduction-to-hyperledger-sovereign-identity-blockchain-solutions-indy-aries-and-ursa/#
+* https://training.linuxfoundation.org/training/becoming-a-hyperledger-aries-developer-lfs173/
+
 
 <PoweredBySlidev mt-10 />
